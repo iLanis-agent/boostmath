@@ -1,0 +1,904 @@
+{
+ "cases": [
+  {
+   "fn": "stepup",
+   "args": [
+    "12",
+    "50"
+   ],
+   "expect": "A 50 % duty cycle in a boost stage steps 12 V up to 24 V."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "12",
+    "24"
+   ],
+   "expect": "To step 12 V up to 24 V, the switch needs a 50 % duty cycle."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "12",
+    "50",
+    "100",
+    "100"
+   ],
+   "expect": "With a 100 \u00b5H inductor at 100 kHz, the current swings 600 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "0.46",
+    "93.71"
+   ],
+   "expect": "A 93.71 % duty cycle in a boost stage steps 0.46 V up to 7.31 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "31.01",
+    "0.7"
+   ],
+   "expect": "A 0.7 % duty cycle in a boost stage steps 31.01 V up to 31.23 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "30.87",
+    "31.27"
+   ],
+   "expect": "A 31.27 % duty cycle in a boost stage steps 30.87 V up to 44.91 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "55.16",
+    "43.82"
+   ],
+   "expect": "A 43.82 % duty cycle in a boost stage steps 55.16 V up to 98.18 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "94.35",
+    "81.86"
+   ],
+   "expect": "A 81.86 % duty cycle in a boost stage steps 94.35 V up to 520.12 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "15.73",
+    "93.17"
+   ],
+   "expect": "A 93.17 % duty cycle in a boost stage steps 15.73 V up to 230.31 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "10.9",
+    "45.54"
+   ],
+   "expect": "A 45.54 % duty cycle in a boost stage steps 10.9 V up to 20.01 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "71.3",
+    "39.33"
+   ],
+   "expect": "A 39.33 % duty cycle in a boost stage steps 71.3 V up to 117.52 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "96.31",
+    "96.22"
+   ],
+   "expect": "A 96.22 % duty cycle in a boost stage steps 96.31 V up to 2547.88 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "35.21",
+    "70.24"
+   ],
+   "expect": "A 70.24 % duty cycle in a boost stage steps 35.21 V up to 118.31 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "93",
+    "36.88"
+   ],
+   "expect": "A 36.88 % duty cycle in a boost stage steps 93 V up to 147.34 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "22.92",
+    "31.2"
+   ],
+   "expect": "A 31.2 % duty cycle in a boost stage steps 22.92 V up to 33.31 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "34.3",
+    "62.15"
+   ],
+   "expect": "A 62.15 % duty cycle in a boost stage steps 34.3 V up to 90.62 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "39.34",
+    "77.64"
+   ],
+   "expect": "A 77.64 % duty cycle in a boost stage steps 39.34 V up to 175.94 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "25.61",
+    "62.05"
+   ],
+   "expect": "A 62.05 % duty cycle in a boost stage steps 25.61 V up to 67.48 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "1.55",
+    "72.82"
+   ],
+   "expect": "A 72.82 % duty cycle in a boost stage steps 1.55 V up to 5.7 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "39.75",
+    "0.04"
+   ],
+   "expect": "A 0.04 % duty cycle in a boost stage steps 39.75 V up to 39.77 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "38.09",
+    "57.2"
+   ],
+   "expect": "A 57.2 % duty cycle in a boost stage steps 38.09 V up to 89 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "7.14",
+    "82.06"
+   ],
+   "expect": "A 82.06 % duty cycle in a boost stage steps 7.14 V up to 39.8 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "33.06",
+    "62.65"
+   ],
+   "expect": "A 62.65 % duty cycle in a boost stage steps 33.06 V up to 88.51 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "18.16",
+    "42.59"
+   ],
+   "expect": "A 42.59 % duty cycle in a boost stage steps 18.16 V up to 31.63 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "24.33",
+    "80.24"
+   ],
+   "expect": "A 80.24 % duty cycle in a boost stage steps 24.33 V up to 123.13 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "48.79",
+    "9.74"
+   ],
+   "expect": "A 9.74 % duty cycle in a boost stage steps 48.79 V up to 54.05 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "69.99",
+    "87.22"
+   ],
+   "expect": "A 87.22 % duty cycle in a boost stage steps 69.99 V up to 547.65 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "69.04",
+    "56.86"
+   ],
+   "expect": "A 56.86 % duty cycle in a boost stage steps 69.04 V up to 160.04 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "94.73",
+    "38.3"
+   ],
+   "expect": "A 38.3 % duty cycle in a boost stage steps 94.73 V up to 153.53 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "15.34",
+    "96.87"
+   ],
+   "expect": "A 96.87 % duty cycle in a boost stage steps 15.34 V up to 490.1 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "83.6",
+    "98.75"
+   ],
+   "expect": "A 98.75 % duty cycle in a boost stage steps 83.6 V up to 6688 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "55.99",
+    "58.35"
+   ],
+   "expect": "A 58.35 % duty cycle in a boost stage steps 55.99 V up to 134.43 V."
+  },
+  {
+   "fn": "stepup",
+   "args": [
+    "98.16",
+    "96.73"
+   ],
+   "expect": "A 96.73 % duty cycle in a boost stage steps 98.16 V up to 3001.83 V."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "84.54",
+    "91.6"
+   ],
+   "expect": "To step 84.54 V up to 91.6 V, the switch needs a 7.71 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "95.17",
+    "96.45"
+   ],
+   "expect": "To step 95.17 V up to 96.45 V, the switch needs a 1.33 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "58.08",
+    "92.01"
+   ],
+   "expect": "To step 58.08 V up to 92.01 V, the switch needs a 36.88 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "79.69",
+    "89.5"
+   ],
+   "expect": "To step 79.69 V up to 89.5 V, the switch needs a 10.96 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "44.33",
+    "52.47"
+   ],
+   "expect": "To step 44.33 V up to 52.47 V, the switch needs a 15.51 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "25.26",
+    "61.61"
+   ],
+   "expect": "To step 25.26 V up to 61.61 V, the switch needs a 59 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "82.37",
+    "99.92"
+   ],
+   "expect": "To step 82.37 V up to 99.92 V, the switch needs a 17.56 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "92.77",
+    "95.04"
+   ],
+   "expect": "To step 92.77 V up to 95.04 V, the switch needs a 2.39 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "70.4",
+    "77.87"
+   ],
+   "expect": "To step 70.4 V up to 77.87 V, the switch needs a 9.59 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "66.68",
+    "97.36"
+   ],
+   "expect": "To step 66.68 V up to 97.36 V, the switch needs a 31.51 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "59.66",
+    "85.9"
+   ],
+   "expect": "To step 59.66 V up to 85.9 V, the switch needs a 30.55 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "98.29",
+    "98.37"
+   ],
+   "expect": "To step 98.29 V up to 98.37 V, the switch needs a 0.08 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "76.68",
+    "84.5"
+   ],
+   "expect": "To step 76.68 V up to 84.5 V, the switch needs a 9.25 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "24.63",
+    "26.38"
+   ],
+   "expect": "To step 24.63 V up to 26.38 V, the switch needs a 6.63 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "50.72",
+    "71.09"
+   ],
+   "expect": "To step 50.72 V up to 71.09 V, the switch needs a 28.65 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "37.72",
+    "52.66"
+   ],
+   "expect": "To step 37.72 V up to 52.66 V, the switch needs a 28.37 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "52.25",
+    "53.59"
+   ],
+   "expect": "To step 52.25 V up to 53.59 V, the switch needs a 2.5 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "74.05",
+    "93.4"
+   ],
+   "expect": "To step 74.05 V up to 93.4 V, the switch needs a 20.72 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "25.72",
+    "74.59"
+   ],
+   "expect": "To step 25.72 V up to 74.59 V, the switch needs a 65.52 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "55.39",
+    "73.76"
+   ],
+   "expect": "To step 55.39 V up to 73.76 V, the switch needs a 24.91 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "48.27",
+    "89.78"
+   ],
+   "expect": "To step 48.27 V up to 89.78 V, the switch needs a 46.24 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "71.64",
+    "76.89"
+   ],
+   "expect": "To step 71.64 V up to 76.89 V, the switch needs a 6.83 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "45.62",
+    "50.73"
+   ],
+   "expect": "To step 45.62 V up to 50.73 V, the switch needs a 10.07 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "82.03",
+    "90.97"
+   ],
+   "expect": "To step 82.03 V up to 90.97 V, the switch needs a 9.83 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "16.88",
+    "47.01"
+   ],
+   "expect": "To step 16.88 V up to 47.01 V, the switch needs a 64.09 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "9",
+    "88.27"
+   ],
+   "expect": "To step 9 V up to 88.27 V, the switch needs a 89.8 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "56.34",
+    "90.53"
+   ],
+   "expect": "To step 56.34 V up to 90.53 V, the switch needs a 37.77 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "53.59",
+    "94.63"
+   ],
+   "expect": "To step 53.59 V up to 94.63 V, the switch needs a 43.37 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "9.3",
+    "90.41"
+   ],
+   "expect": "To step 9.3 V up to 90.41 V, the switch needs a 89.71 % duty cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "24.78",
+    "46.28"
+   ],
+   "expect": "To step 24.78 V up to 46.28 V, the switch needs a 46.46 % duty cycle."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "17.51",
+    "34.59",
+    "40044.01",
+    "5056.09"
+   ],
+   "expect": "With a 40044.01 \u00b5H inductor at 5056.09 kHz, the current swings 0.03 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "96.89",
+    "11.29",
+    "23756.11",
+    "6400.89"
+   ],
+   "expect": "With a 23756.11 \u00b5H inductor at 6400.89 kHz, the current swings 0.07 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "60.59",
+    "2.92",
+    "94672.82",
+    "4984.39"
+   ],
+   "expect": "With a 94672.82 \u00b5H inductor at 4984.39 kHz, the current swings 0 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "94.75",
+    "95.91",
+    "85819.66",
+    "6297.14"
+   ],
+   "expect": "With a 85819.66 \u00b5H inductor at 6297.14 kHz, the current swings 0.17 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "67.69",
+    "30.33",
+    "62999.41",
+    "1128.56"
+   ],
+   "expect": "With a 62999.41 \u00b5H inductor at 1128.56 kHz, the current swings 0.29 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "48.39",
+    "70.72",
+    "72410.41",
+    "3684.77"
+   ],
+   "expect": "With a 72410.41 \u00b5H inductor at 3684.77 kHz, the current swings 0.13 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "52.48",
+    "77.83",
+    "19370.17",
+    "3312.83"
+   ],
+   "expect": "With a 19370.17 \u00b5H inductor at 3312.83 kHz, the current swings 0.64 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "5.35",
+    "47.81",
+    "23939.41",
+    "6635.47"
+   ],
+   "expect": "With a 23939.41 \u00b5H inductor at 6635.47 kHz, the current swings 0.02 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "13.06",
+    "89.54",
+    "15295.43",
+    "4851.96"
+   ],
+   "expect": "With a 15295.43 \u00b5H inductor at 4851.96 kHz, the current swings 0.16 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "72",
+    "39.34",
+    "31999.66",
+    "1109.34"
+   ],
+   "expect": "With a 31999.66 \u00b5H inductor at 1109.34 kHz, the current swings 0.8 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "86.74",
+    "90.44",
+    "65095.86",
+    "842.48"
+   ],
+   "expect": "With a 65095.86 \u00b5H inductor at 842.48 kHz, the current swings 1.43 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "99.08",
+    "86.86",
+    "38460.73",
+    "9359.9"
+   ],
+   "expect": "With a 38460.73 \u00b5H inductor at 9359.9 kHz, the current swings 0.24 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "19.51",
+    "91.19",
+    "52936.7",
+    "4984.62"
+   ],
+   "expect": "With a 52936.7 \u00b5H inductor at 4984.62 kHz, the current swings 0.07 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "68.55",
+    "42.49",
+    "70379.79",
+    "8358.84"
+   ],
+   "expect": "With a 70379.79 \u00b5H inductor at 8358.84 kHz, the current swings 0.05 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "8.35",
+    "84.73",
+    "71757.88",
+    "5665.03"
+   ],
+   "expect": "With a 71757.88 \u00b5H inductor at 5665.03 kHz, the current swings 0.02 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "68.15",
+    "80.46",
+    "83211.31",
+    "1739.1"
+   ],
+   "expect": "With a 83211.31 \u00b5H inductor at 1739.1 kHz, the current swings 0.38 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "36.48",
+    "0.88",
+    "6676.22",
+    "5912.65"
+   ],
+   "expect": "With a 6676.22 \u00b5H inductor at 5912.65 kHz, the current swings 0.01 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "44.49",
+    "37.23",
+    "67250.14",
+    "8840.88"
+   ],
+   "expect": "With a 67250.14 \u00b5H inductor at 8840.88 kHz, the current swings 0.03 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "19.34",
+    "33.88",
+    "25698.8",
+    "435.7"
+   ],
+   "expect": "With a 25698.8 \u00b5H inductor at 435.7 kHz, the current swings 0.59 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "75.53",
+    "68.37",
+    "55900.87",
+    "9006.53"
+   ],
+   "expect": "With a 55900.87 \u00b5H inductor at 9006.53 kHz, the current swings 0.1 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "81.3",
+    "36.36",
+    "51303.84",
+    "6016.5"
+   ],
+   "expect": "With a 51303.84 \u00b5H inductor at 6016.5 kHz, the current swings 0.1 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "77.43",
+    "17.14",
+    "80254.82",
+    "633.72"
+   ],
+   "expect": "With a 80254.82 \u00b5H inductor at 633.72 kHz, the current swings 0.26 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "59.26",
+    "89.13",
+    "54644.57",
+    "1439.55"
+   ],
+   "expect": "With a 54644.57 \u00b5H inductor at 1439.55 kHz, the current swings 0.67 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "70.43",
+    "47.2",
+    "36023.2",
+    "9990.82"
+   ],
+   "expect": "With a 36023.2 \u00b5H inductor at 9990.82 kHz, the current swings 0.09 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "10.23",
+    "10.59",
+    "58979.07",
+    "2020.02"
+   ],
+   "expect": "With a 58979.07 \u00b5H inductor at 2020.02 kHz, the current swings 0.01 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "87.9",
+    "61.13",
+    "33557.73",
+    "6854.88"
+   ],
+   "expect": "With a 33557.73 \u00b5H inductor at 6854.88 kHz, the current swings 0.23 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "59.41",
+    "26.61",
+    "6795.06",
+    "3488.15"
+   ],
+   "expect": "With a 6795.06 \u00b5H inductor at 3488.15 kHz, the current swings 0.67 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "96.07",
+    "81.68",
+    "7556.53",
+    "7259.87"
+   ],
+   "expect": "With a 7556.53 \u00b5H inductor at 7259.87 kHz, the current swings 1.43 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "80.7",
+    "65.79",
+    "45307.7",
+    "6502.97"
+   ],
+   "expect": "With a 45307.7 \u00b5H inductor at 6502.97 kHz, the current swings 0.18 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "14.1",
+    "23.97",
+    "59330.87",
+    "121.6"
+   ],
+   "expect": "With a 59330.87 \u00b5H inductor at 121.6 kHz, the current swings 0.47 mA peak to peak as the switch cycles."
+  }
+ ],
+ "errors": [
+  [
+   "stepup",
+   [
+    "0",
+    "50"
+   ]
+  ],
+  [
+   "stepup",
+   [
+    "12",
+    "0"
+   ]
+  ],
+  [
+   "stepup",
+   [
+    "12",
+    "99.005"
+   ]
+  ],
+  [
+   "stepup",
+   [
+    "abc",
+    "50"
+   ]
+  ],
+  [
+   "stepup",
+   [
+    "12",
+    "100"
+   ]
+  ],
+  [
+   "duty",
+   [
+    "12",
+    "12"
+   ]
+  ],
+  [
+   "duty",
+   [
+    "24",
+    "12"
+   ]
+  ],
+  [
+   "duty",
+   [
+    "12",
+    "100.01"
+   ]
+  ],
+  [
+   "ripple",
+   [
+    "12",
+    "50",
+    "0",
+    "100"
+   ]
+  ],
+  [
+   "ripple",
+   [
+    "12",
+    "50",
+    "100",
+    "0"
+   ]
+  ],
+  [
+   "ripple",
+   [
+    "12",
+    "50",
+    "100000.01",
+    "100"
+   ]
+  ],
+  [
+   "ripple",
+   [
+    "12",
+    "50",
+    "100",
+    "10000.01"
+   ]
+  ]
+ ]
+}
